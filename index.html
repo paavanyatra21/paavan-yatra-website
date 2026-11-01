@@ -5,6 +5,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#086cb7">
+
+<!-- Premium Paavan Yatra refresh: visual system, responsive polish and SEO metadata -->
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Paavan Yatra Tours &amp; Travels">
+<meta property="og:title" content="Paavan Yatra | Discover the Konkan Coast">
+<meta property="og:description" content="Explore Ganpatipule, Ratnagiri, Jaigad and Guhagar with thoughtfully planned Konkan journeys. Enquire with Paavan Yatra.">
+<meta property="og:url" content="https://paavanyatra.website/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://paavanyatra.website/">
+
 <meta name="description" content="Explore Konkan with Paavan Yatra Tours & Travels. Discover Ganpatipule, Ratnagiri, Jaigad, Guhagar and Konkan Darshan packages.">
 <title>Paavan Yatra Tours & Travels | Your journey, our responsibility.</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -180,6 +191,114 @@ footer{background:#064d84;color:white;padding:43px 0 20px}
   .hero-actions .btn{width:100%}
   .package-buttons{flex-direction:column}
 }
+
+/* ===== PREMIUM DESIGN SYSTEM ===== */
+:root{
+ --blue:#086cb7;--dark:#073e68;--pale:#f2f8fc;--ink:#142b3c;
+ --muted:#617586;--border:#dce8f1;--white:#fff;
+ --gold:#d8ad68;--shadow:0 18px 55px rgba(8,49,78,.10);
+ --radius:18px;
+}
+html{scroll-padding-top:100px}
+body{background:#fff;color:var(--ink);font-size:15px;letter-spacing:.005em}
+.container{width:min(1180px,calc(100% - 48px))}
+section{padding:clamp(68px,8vw,108px) 0}
+h1,h2,h3{letter-spacing:-.025em}
+h2{font-size:clamp(34px,4.4vw,54px)}
+.eyebrow{font-size:10px;letter-spacing:2.8px;color:var(--blue)}
+.intro,.about-copy p,.contact-copy p{font-size:15px;line-height:1.85}
+header{background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid rgba(220,232,241,.8);box-shadow:0 5px 25px rgba(10,48,75,.035)}
+.nav{min-height:94px}
+.brand img{width:70px;height:70px}
+.brand-title{letter-spacing:-.03em}
+.nav-links{gap:30px}
+.nav-links>a:not(.btn){font-size:13px;color:#304b60;transition:color .2s}
+.nav-links .btn,.btn{border-radius:999px;padding:14px 23px;font-size:12px;letter-spacing:.02em}
+.primary{background:linear-gradient(135deg,#0b78c8,#07558e);box-shadow:0 8px 22px rgba(8,108,183,.2)}
+.primary:hover{box-shadow:0 12px 28px rgba(8,108,183,.28)}
+.hero{min-height:min(720px,78vw);background:#073e68}
+.hero:before{background:linear-gradient(90deg,rgba(3,28,48,.82) 0%,rgba(3,43,70,.60) 48%,rgba(3,43,70,.15) 100%),url(Home.png) center/cover}
+.hero-content{max-width:790px;padding:clamp(90px,12vw,150px) 0}
+.hero .eyebrow{display:inline-flex;padding:9px 14px;border:1px solid rgba(255,255,255,.38);border-radius:99px;background:rgba(255,255,255,.10);backdrop-filter:blur(8px);font-size:10px}
+.hero h1{font-size:clamp(48px,7.4vw,88px);line-height:1.02;letter-spacing:-.055em;text-wrap:balance}
+.hero h1 em{color:#d9efff}
+.hero p{font-size:clamp(15px,1.5vw,18px);line-height:1.8;max-width:610px;color:rgba(255,255,255,.9)}
+.hero-actions{gap:14px}
+.hero-note{font-size:12px;letter-spacing:.04em;color:#e6f4ff}
+.destination-bar{background:#fff;color:var(--dark);border-bottom:1px solid var(--border);box-shadow:0 8px 30px rgba(8,49,78,.04)}
+.destination-links{padding:19px 0;gap:12px 38px}
+.destination-links a{font-size:12px;color:#31536b}
+.destination-links a:hover{color:var(--blue)}
+.about-grid{gap:clamp(35px,6vw,82px)}
+.about-image img{height:460px;border-radius:var(--radius);box-shadow:var(--shadow)}
+.image-note{left:-18px;bottom:24px;border-radius:0 12px 12px 0;box-shadow:var(--shadow);font-size:20px}
+.packages-section{background:linear-gradient(180deg,#f4f9fd 0%,#fff 100%)}
+.section-head{max-width:700px}
+.package-grid{gap:28px}
+.package-card{border:1px solid #e3edf4;border-radius:var(--radius);box-shadow:0 8px 28px rgba(10,55,86,.045);transition:transform .25s,box-shadow .25s,border-color .25s}
+.package-card:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:#c5ddeb}
+.package-photo{height:270px;overflow:hidden}
+.package-photo img{transition:transform .6s}
+.package-card:hover .package-photo img{transform:scale(1.045)}
+.package-content{padding:clamp(22px,3vw,31px)}
+.package-duration{display:inline-block;padding:6px 10px;border-radius:99px;background:#eef7fd;color:#086cb7;font-size:10px;letter-spacing:.08em;text-transform:uppercase}
+.package-card h3{font-size:clamp(25px,2.5vw,31px);margin-top:9px}
+.package-desc{font-size:14px;line-height:1.75;min-height:50px}
+.price-area{margin-top:22px;padding-top:18px}
+.price{font-size:27px;letter-spacing:-.03em}
+.package-buttons .btn{min-height:48px}
+details{margin-top:20px;padding-top:17px}
+summary{font-size:13px}
+.details-content{font-size:13px;line-height:1.75}
+.pricing-note{border-radius:14px;padding:24px 27px;line-height:1.8;box-shadow:0 8px 24px rgba(10,55,86,.035)}
+.cta{position:relative;background-position:center;background-attachment:scroll;padding:clamp(75px,9vw,115px) 0}
+.cta h2{font-size:clamp(36px,5vw,58px)}
+.cta p{font-size:15px;line-height:1.8}
+.contact-section{background:#f2f8fc}
+.contact-grid{gap:clamp(35px,6vw,80px)}
+.contact-icon{border-radius:13px;width:46px;height:46px;box-shadow:0 5px 15px rgba(8,49,78,.05)}
+.contact-item strong{font-size:13px}
+.contact-item a,.contact-item span{font-size:13px}
+.form-card{border:1px solid #e2edf4;border-radius:var(--radius);padding:clamp(23px,3vw,36px);box-shadow:var(--shadow)}
+.form-card h3{font-size:30px}
+.form-group input,.form-group textarea{border-radius:9px;padding:14px;font-size:14px;transition:border-color .2s,box-shadow .2s}
+.form-group input:focus,.form-group textarea:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(8,108,183,.12)}
+footer{background:linear-gradient(135deg,#052f50,#064d84);padding:55px 0 24px}
+.footer-links a,.footer-brand p{line-height:1.9}
+.floating-wa{width:58px;height:58px;right:22px;bottom:22px;box-shadow:0 8px 24px rgba(0,0,0,.2);transition:transform .2s}
+.floating-wa:hover{transform:translateY(-4px) scale(1.04)}
+.reveal{transform:translateY(20px);transition:opacity .65s ease,transform .65s ease}
+@media(max-width:850px){
+ .container{width:min(100% - 38px,720px)}
+ .nav-links{gap:15px}
+ .hero{min-height:600px}
+ .package-photo{height:230px}
+}
+@media(max-width:700px){
+ section{padding:68px 0}
+ .container{width:calc(100% - 34px)}
+ .nav{min-height:76px}
+ .brand img{width:51px;height:51px}
+ .hero{min-height:590px}
+ .hero:before{background:linear-gradient(90deg,rgba(3,28,48,.78),rgba(3,43,70,.48)),url(Home.png) 58% center/cover}
+ .hero-content{padding:78px 0}
+ .hero h1{font-size:clamp(43px,12vw,62px)}
+ .destination-links{justify-content:flex-start;gap:10px;overflow-x:auto;flex-wrap:nowrap;padding:17px 0;scrollbar-width:none}
+ .destination-links a{white-space:nowrap;padding:7px 11px;border:1px solid var(--border);border-radius:99px}
+ .about-image img{height:310px}
+ .image-note{left:-5px;font-size:17px}
+ .package-grid{gap:22px}
+ .package-photo{height:235px}
+ .package-content{padding:23px}
+ .footer-top{gap:28px}
+ .floating-wa{right:15px;bottom:15px;width:54px;height:54px}
+}
+@media(max-width:390px){
+ .hero h1{font-size:42px}
+ .hero-actions .btn{width:100%}
+ .package-buttons{flex-direction:column}
+}
+
 </style>
 </head>
 
@@ -242,7 +361,7 @@ footer{background:#064d84;color:white;padding:43px 0 20px}
       <a class="btn primary" href="#packages" style="margin-top:23px">View Our Packages</a>
     </div>
     <div class="about-image reveal">
-      <img src="middle.png">
+      <img src="middle.png" alt="Scenic Konkan coastline and travel destination" loading="lazy">
       <div class="image-note">Your journey, our responsibility.</div>
     </div>
   </div>
