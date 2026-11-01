@@ -1,867 +1,98 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#086cb7">
-
-<!-- Premium Paavan Yatra refresh: visual system, responsive polish and SEO metadata -->
-<meta name="robots" content="index,follow,max-image-preview:large">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Paavan Yatra Tours &amp; Travels">
-<meta property="og:title" content="Paavan Yatra | Discover the Konkan Coast">
-<meta property="og:description" content="Explore Ganpatipule, Ratnagiri, Jaigad and Guhagar with thoughtfully planned Konkan journeys. Enquire with Paavan Yatra.">
-<meta property="og:url" content="https://paavanyatra.website/">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="canonical" href="https://paavanyatra.website/">
-
-<meta name="description" content="Explore Konkan with Paavan Yatra Tours & Travels. Discover Ganpatipule, Ratnagiri, Jaigad, Guhagar and Konkan Darshan packages.">
-<title>Paavan Yatra Tours & Travels | Your journey, our responsibility.</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-
+<meta name="description" content="Discover the Konkan coast with Paavan Yatra. Explore Ganpatipule, Ratnagiri, Jaigad, Guhagar, Dapoli, Malvan, Tarkarli and more.">
+<title>Paavan Yatra | Discover the Konkan Coast</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{
-  --blue:#086cb7;
-  --dark:#064d84;
-  --pale:#eef7fd;
-  --white:#fff;
-  --ink:#1c2b38;
-  --muted:#657582;
-  --border:#dce8f1;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:85px}
-body{font-family:"DM Sans",Arial,sans-serif;color:var(--ink);line-height:1.7}
-a{color:inherit;text-decoration:none}
-button,input,textarea{font:inherit}
-.container{width:min(1120px,calc(100% - 38px));margin:auto}
-section{padding:76px 0}
-h1,h2,h3{font-family:"Playfair Display",Georgia,serif;font-weight:600;line-height:1.2}
-h2{font-size:clamp(32px,4vw,46px)}
-.eyebrow{display:block;color:var(--blue);font-size:11px;letter-spacing:2px;text-transform:uppercase;font-weight:700;margin-bottom:13px}
-.intro{max-width:620px;color:var(--muted);font-size:14px;margin-top:14px}
-.section-head{margin-bottom:32px}
-.btn{display:inline-flex;justify-content:center;align-items:center;gap:8px;padding:12px 19px;border-radius:5px;border:1px solid transparent;font-size:12px;font-weight:700;cursor:pointer;transition:.2s}
-.btn:hover{transform:translateY(-2px)}
-.primary{background:var(--blue);color:white}
-.primary:hover{background:var(--dark)}
-.white-btn{background:white;color:var(--blue)}
-.outline{border-color:var(--blue);color:var(--blue);background:white}
-
-/* HEADER */
-header{position:sticky;top:0;z-index:100;background:white;border-bottom:1px solid var(--border)}
-.nav{min-height:88px;display:flex;align-items:center;justify-content:space-between;gap:20px}
-.brand{display:flex;align-items:center;gap:12px;min-width:0}
-.brand img{width:65px;height:65px;object-fit:contain;flex-shrink:0}
-.brand-title{display:block;color:var(--blue);font-size:clamp(17px,2vw,23px);font-weight:700;line-height:1.25}
-.brand-tagline{display:block;color:var(--muted);font-size:11px;margin-top:4px;line-height:1.4}
-.nav-links{display:flex;align-items:center;gap:24px}
-.nav-links>a:not(.btn){font-size:12px;font-weight:700}
-.nav-links>a:not(.btn):hover{color:var(--blue)}
-.nav-links .btn{padding:11px 17px}
-.menu-toggle{display:none;background:white;color:var(--blue);border:1px solid var(--border);border-radius:5px;width:42px;height:42px;font-size:23px}
-
-/* HERO */
-.hero{position:relative;min-height:570px;display:flex;align-items:center;color:white;background:#064d84;overflow:hidden}
-.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(2,38,67,.84),rgba(2,38,67,.4)),url(Home.png) center/cover}
-.hero-content{position:relative;padding:80px 0;max-width:760px}
-.hero .eyebrow{color:#d9edff}
-.hero h1{font-size:clamp(43px,7vw,75px);letter-spacing:-1.5px}
-.hero h1 em{font-weight:500;color:#c6e5ff}
-.hero p{max-width:570px;margin-top:22px;color:#f0f7fc;font-size:14px}
-.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
-.hero-note{font-size:12px;margin-top:25px;color:#e4f2fc}
-
-/* SIMPLE DESTINATION BAR */
-.destination-bar{background:var(--blue);color:white}
-.destination-links{display:flex;justify-content:center;flex-wrap:wrap;gap:12px 34px;padding:16px 0}
-.destination-links a{font-size:12px;font-weight:700}
-.destination-links a:hover{text-decoration:underline}
-
-/* ABOUT */
-.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}
-.about-copy p{font-size:14px;color:var(--muted);margin-top:15px}
-.about-image img{width:100%;height:390px;object-fit:cover;border-radius:7px}
-.about-image{position:relative}
-.image-note{position:absolute;bottom:18px;left:-15px;background:var(--blue);color:white;padding:17px 20px;font-family:"Playfair Display",Georgia,serif;font-size:19px}
-
-/* PACKAGES */
-.packages-section{background:#f5faff}
-.package-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:25px}
-.package-card{background:white;border:1px solid var(--border);border-radius:7px;overflow:hidden}
-.package-photo{height:245px;background:#e3f1fb}
-.package-photo img{width:100%;height:100%;object-fit:cover}
-.package-content{padding:24px}
-.package-duration{font-size:11px;font-weight:700;color:var(--muted);margin-bottom:8px}
-.package-card h3{font-size:27px;color:var(--dark)}
-.package-desc{font-size:13px;color:var(--muted);margin-top:10px;min-height:44px}
-.price-area{border-top:1px solid var(--border);margin-top:19px;padding-top:15px}
-.price-caption{display:block;font-size:11px;color:var(--muted)}
-.price{display:block;font-family:"DM Sans",Arial,sans-serif;color:var(--blue);font-size:23px;font-weight:700;line-height:1.5}
-.price-note{font-size:11px;color:var(--muted)}
-.package-buttons{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
-.package-buttons .btn{flex:1}
-details{margin-top:17px;border-top:1px solid var(--border);padding-top:13px}
-summary{font-size:12px;font-weight:700;color:var(--blue);cursor:pointer}
-.details-content{padding-top:12px;font-size:12px;color:var(--muted)}
-.details-content h4{font-family:"DM Sans",Arial,sans-serif;color:var(--ink);font-size:12px;margin:15px 0 5px}
-.details-content ul{padding-left:18px}
-.details-content li{margin-bottom:5px}
-.pricing-note{font-size:12px;color:var(--muted);margin-top:27px;padding:18px;background:white;border:1px solid var(--border);border-radius:5px}
-.pricing-note strong{color:var(--ink)}
-.pricing-note ul{padding-left:20px;margin-top:7px}
-
-/* CTA */
-.cta{background:linear-gradient(90deg,rgba(3,52,90,.88),rgba(8,108,183,.66)),url("https://images.unsplash.com/photo-1473116763249-2faaef81ccda?auto=format&fit=crop&w=1800&q=85") center/cover;color:white;text-align:center}
-.cta h2{max-width:730px;margin:auto}
-.cta p{max-width:570px;margin:17px auto 25px;color:#f0f7fc;font-size:14px}
-
-/* CONTACT */
-.contact-section{background:var(--pale)}
-.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:start}
-.contact-copy p{font-size:14px;color:var(--muted);margin-top:15px}
-.contact-info{margin-top:27px;display:grid;gap:17px}
-.contact-item{display:flex;gap:13px;align-items:flex-start}
-.contact-icon{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:white;color:var(--blue);border:1px solid var(--border);font-size:12px;font-weight:700;flex-shrink:0}
-.contact-item strong{display:block;font-size:12px}
-.contact-item a,.contact-item span{display:block;font-size:12px;color:var(--muted);overflow-wrap:anywhere}
-.form-card{background:white;border:1px solid var(--border);padding:27px;border-radius:7px}
-.form-card h3{font-size:26px;color:var(--dark)}
-.form-card>p{font-size:12px;color:var(--muted);margin-top:8px}
-.form-group{margin-top:15px}
-.form-group label{display:block;font-size:11px;font-weight:700;margin-bottom:6px}
-.form-group input,.form-group textarea{width:100%;padding:12px;border:1px solid var(--border);border-radius:4px;font-size:13px;background:white}
-.form-group textarea{min-height:85px;resize:vertical}
-.form-card button{width:100%;margin-top:19px}
-.form-note{font-size:10px!important;color:var(--muted);margin-top:11px}
-
-/* BOTTOM PAGE */
-footer{background:#064d84;color:white;padding:43px 0 20px}
-.footer-top{display:flex;justify-content:space-between;gap:35px;padding-bottom:28px}
-.footer-brand{max-width:370px}
-.footer-brand .brand-title{color:white}
-.footer-brand .brand-tagline{color:#dcecf8}
-.footer-brand p{font-size:12px;color:#e1edf7;margin-top:14px}
-.footer-links h3{font-family:"DM Sans",Arial,sans-serif;font-size:12px;margin-bottom:10px}
-.footer-links a{display:block;font-size:12px;color:#e1edf7;margin-top:7px}
-.footer-links a:hover{text-decoration:underline}
-.footer-bottom{border-top:1px solid #ffffff40;padding-top:17px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:10px;color:#e1edf7}
-.floating-wa{position:fixed;right:19px;bottom:19px;z-index:90;background:#167c49;color:white;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;font-weight:700;font-size:13px;box-shadow:0 4px 15px #0002;border:2px solid white}
-.reveal{opacity:0;transform:translateY(12px);transition:opacity .4s,transform .4s}
-.reveal.visible{opacity:1;transform:none}
-@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}.reveal{opacity:1;transform:none}}
-@media(max-width:850px){
-  .nav-links{gap:14px}
-  .nav-links>a:not(.btn){font-size:11px}
-  .package-grid{gap:17px}
-  .package-content{padding:19px}
-  .about-grid,.contact-grid{gap:30px}
-}
-@media(max-width:700px){
-  section{padding:60px 0}
-  .container{width:calc(100% - 32px)}
-  .nav{min-height:76px}
-  .brand img{width:52px;height:52px}
-  .brand-tagline{max-width:225px;font-size:10px}
-  .menu-toggle{display:block;flex-shrink:0}
-  .nav-links{position:fixed;top:76px;left:0;right:0;background:white;padding:16px 22px 25px;display:flex;flex-direction:column;align-items:stretch;gap:0;opacity:0;pointer-events:none;transform:translateY(-6px);transition:.2s;box-shadow:0 12px 18px #0000000c}
-  .nav-links.open{opacity:1;pointer-events:auto;transform:none}
-  .nav-links>a:not(.btn){font-size:13px;padding:13px 0;border-bottom:1px solid var(--border)}
-  .nav-links .btn{margin-top:15px}
-  .hero{min-height:520px}
-  .hero-content{padding:70px 0}
-  .hero h1{font-size:clamp(40px,10vw,59px)}
-  .hero p{font-size:13px}
-  .destination-links{gap:10px 20px}
-  .destination-links a{font-size:11px}
-  .about-grid,.contact-grid{grid-template-columns:1fr;gap:28px}
-  .about-image img{height:300px}
-  .image-note{left:-5px}
-  .package-grid{grid-template-columns:1fr}
-  .package-photo{height:225px}
-  .package-desc{min-height:0}
-  .footer-top{flex-direction:column}
-  .footer-brand{max-width:100%}
-}
-@media(max-width:390px){
-  .brand-title{font-size:16px}
-  .brand img{width:45px;height:45px}
-  .hero-actions .btn{width:100%}
-  .package-buttons{flex-direction:column}
-}
-
-/* ===== PREMIUM DESIGN SYSTEM ===== */
-:root{
- --blue:#086cb7;--dark:#073e68;--pale:#f2f8fc;--ink:#142b3c;
- --muted:#617586;--border:#dce8f1;--white:#fff;
- --gold:#d8ad68;--shadow:0 18px 55px rgba(8,49,78,.10);
- --radius:18px;
-}
-html{scroll-padding-top:100px}
-body{background:#fff;color:var(--ink);font-size:15px;letter-spacing:.005em}
-.container{width:min(1180px,calc(100% - 48px))}
-section{padding:clamp(68px,8vw,108px) 0}
-h1,h2,h3{letter-spacing:-.025em}
-h2{font-size:clamp(34px,4.4vw,54px)}
-.eyebrow{font-size:10px;letter-spacing:2.8px;color:var(--blue)}
-.intro,.about-copy p,.contact-copy p{font-size:15px;line-height:1.85}
-header{background:rgba(255,255,255,.94);backdrop-filter:blur(16px);border-bottom:1px solid rgba(220,232,241,.8);box-shadow:0 5px 25px rgba(10,48,75,.035)}
-.nav{min-height:94px}
-.brand img{width:70px;height:70px}
-.brand-title{letter-spacing:-.03em}
-.nav-links{gap:30px}
-.nav-links>a:not(.btn){font-size:13px;color:#304b60;transition:color .2s}
-.nav-links .btn,.btn{border-radius:999px;padding:14px 23px;font-size:12px;letter-spacing:.02em}
-.primary{background:linear-gradient(135deg,#0b78c8,#07558e);box-shadow:0 8px 22px rgba(8,108,183,.2)}
-.primary:hover{box-shadow:0 12px 28px rgba(8,108,183,.28)}
-.hero{min-height:min(720px,78vw);background:#073e68}
-.hero:before{background:linear-gradient(90deg,rgba(3,28,48,.82) 0%,rgba(3,43,70,.60) 48%,rgba(3,43,70,.15) 100%),url(Home.png) center/cover}
-.hero-content{max-width:790px;padding:clamp(90px,12vw,150px) 0}
-.hero .eyebrow{display:inline-flex;padding:9px 14px;border:1px solid rgba(255,255,255,.38);border-radius:99px;background:rgba(255,255,255,.10);backdrop-filter:blur(8px);font-size:10px}
-.hero h1{font-size:clamp(48px,7.4vw,88px);line-height:1.02;letter-spacing:-.055em;text-wrap:balance}
-.hero h1 em{color:#d9efff}
-.hero p{font-size:clamp(15px,1.5vw,18px);line-height:1.8;max-width:610px;color:rgba(255,255,255,.9)}
-.hero-actions{gap:14px}
-.hero-note{font-size:12px;letter-spacing:.04em;color:#e6f4ff}
-.destination-bar{background:#fff;color:var(--dark);border-bottom:1px solid var(--border);box-shadow:0 8px 30px rgba(8,49,78,.04)}
-.destination-links{padding:19px 0;gap:12px 38px}
-.destination-links a{font-size:12px;color:#31536b}
-.destination-links a:hover{color:var(--blue)}
-.about-grid{gap:clamp(35px,6vw,82px)}
-.about-image img{height:460px;border-radius:var(--radius);box-shadow:var(--shadow)}
-.image-note{left:-18px;bottom:24px;border-radius:0 12px 12px 0;box-shadow:var(--shadow);font-size:20px}
-.packages-section{background:linear-gradient(180deg,#f4f9fd 0%,#fff 100%)}
-.section-head{max-width:700px}
-.package-grid{gap:28px}
-.package-card{border:1px solid #e3edf4;border-radius:var(--radius);box-shadow:0 8px 28px rgba(10,55,86,.045);transition:transform .25s,box-shadow .25s,border-color .25s}
-.package-card:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:#c5ddeb}
-.package-photo{height:270px;overflow:hidden}
-.package-photo img{transition:transform .6s}
-.package-card:hover .package-photo img{transform:scale(1.045)}
-.package-content{padding:clamp(22px,3vw,31px)}
-.package-duration{display:inline-block;padding:6px 10px;border-radius:99px;background:#eef7fd;color:#086cb7;font-size:10px;letter-spacing:.08em;text-transform:uppercase}
-.package-card h3{font-size:clamp(25px,2.5vw,31px);margin-top:9px}
-.package-desc{font-size:14px;line-height:1.75;min-height:50px}
-.price-area{margin-top:22px;padding-top:18px}
-.price{font-size:27px;letter-spacing:-.03em}
-.package-buttons .btn{min-height:48px}
-details{margin-top:20px;padding-top:17px}
-summary{font-size:13px}
-.details-content{font-size:13px;line-height:1.75}
-.pricing-note{border-radius:14px;padding:24px 27px;line-height:1.8;box-shadow:0 8px 24px rgba(10,55,86,.035)}
-.cta{position:relative;background-position:center;background-attachment:scroll;padding:clamp(75px,9vw,115px) 0}
-.cta h2{font-size:clamp(36px,5vw,58px)}
-.cta p{font-size:15px;line-height:1.8}
-.contact-section{background:#f2f8fc}
-.contact-grid{gap:clamp(35px,6vw,80px)}
-.contact-icon{border-radius:13px;width:46px;height:46px;box-shadow:0 5px 15px rgba(8,49,78,.05)}
-.contact-item strong{font-size:13px}
-.contact-item a,.contact-item span{font-size:13px}
-.form-card{border:1px solid #e2edf4;border-radius:var(--radius);padding:clamp(23px,3vw,36px);box-shadow:var(--shadow)}
-.form-card h3{font-size:30px}
-.form-group input,.form-group textarea{border-radius:9px;padding:14px;font-size:14px;transition:border-color .2s,box-shadow .2s}
-.form-group input:focus,.form-group textarea:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(8,108,183,.12)}
-footer{background:linear-gradient(135deg,#052f50,#064d84);padding:55px 0 24px}
-.footer-links a,.footer-brand p{line-height:1.9}
-.floating-wa{width:58px;height:58px;right:22px;bottom:22px;box-shadow:0 8px 24px rgba(0,0,0,.2);transition:transform .2s}
-.floating-wa:hover{transform:translateY(-4px) scale(1.04)}
-.reveal{transform:translateY(20px);transition:opacity .65s ease,transform .65s ease}
-@media(max-width:850px){
- .container{width:min(100% - 38px,720px)}
- .nav-links{gap:15px}
- .hero{min-height:600px}
- .package-photo{height:230px}
-}
-@media(max-width:700px){
- section{padding:68px 0}
- .container{width:calc(100% - 34px)}
- .nav{min-height:76px}
- .brand img{width:51px;height:51px}
- .hero{min-height:590px}
- .hero:before{background:linear-gradient(90deg,rgba(3,28,48,.78),rgba(3,43,70,.48)),url(Home.png) 58% center/cover}
- .hero-content{padding:78px 0}
- .hero h1{font-size:clamp(43px,12vw,62px)}
- .destination-links{justify-content:flex-start;gap:10px;overflow-x:auto;flex-wrap:nowrap;padding:17px 0;scrollbar-width:none}
- .destination-links a{white-space:nowrap;padding:7px 11px;border:1px solid var(--border);border-radius:99px}
- .about-image img{height:310px}
- .image-note{left:-5px;font-size:17px}
- .package-grid{gap:22px}
- .package-photo{height:235px}
- .package-content{padding:23px}
- .footer-top{gap:28px}
- .floating-wa{right:15px;bottom:15px;width:54px;height:54px}
-}
-@media(max-width:390px){
- .hero h1{font-size:42px}
- .hero-actions .btn{width:100%}
- .package-buttons{flex-direction:column}
-}
-
+:root{--blue:#086cb7;--navy:#073b64;--sky:#eaf5fc;--ink:#172b3b;--muted:#667987;--line:#e2ebf1;--white:#fff;--green:#16834a;--shadow:0 18px 50px #123b5712}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;font-family:"DM Sans",sans-serif;color:var(--ink);line-height:1.6}a{text-decoration:none;color:inherit}button,input,select,textarea{font:inherit}.wrap{width:min(1160px,calc(100% - 40px));margin:auto}.topline{background:#073b64;color:#e7f4fc;font-size:11px;padding:8px 0}.topline .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}header{position:sticky;top:0;background:#ffffffed;backdrop-filter:blur(14px);z-index:20;border-bottom:1px solid var(--line)}.nav{height:82px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:11px}.brand img{width:58px;height:58px;object-fit:contain}.brand b{display:block;color:var(--blue);font-size:19px;line-height:1.2}.brand small{display:block;color:var(--muted);font-size:10px;margin-top:4px}.links{display:flex;align-items:center;gap:28px;font-size:13px;font-weight:700}.links a:hover{color:var(--blue)}.btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:8px;padding:13px 20px;background:var(--blue);color:white;font-weight:800;font-size:13px;cursor:pointer;transition:.2s}.btn:hover{background:#05558f;transform:translateY(-2px)}.btn.light{background:white;color:var(--blue)}.btn.outline{background:transparent;border:1px solid #ffffffb5;color:white}.menu{display:none;border:1px solid var(--line);background:white;border-radius:8px;padding:9px 12px;color:var(--blue);font-size:20px}
+.hero{position:relative;min-height:620px;display:flex;align-items:center;color:white;background:#0c466d;overflow:hidden}.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#052d4be8 0%,#073b64a8 48%,#073b6420 100%),url('https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=2200&q=88') center 48%/cover}.hero-inner{position:relative;padding:88px 0;max-width:720px}.tag{display:inline-flex;align-items:center;gap:8px;border:1px solid #ffffff65;background:#ffffff18;padding:7px 12px;border-radius:30px;font-size:11px;font-weight:700;letter-spacing:.8px;text-transform:uppercase}.hero h1{font:600 clamp(44px,7vw,78px)/1.04 "Playfair Display",serif;letter-spacing:-1.6px;margin:22px 0}.hero h1 em{color:#bce4ff}.hero p{font-size:16px;color:#e5f3fb;max-width:570px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.trust{display:flex;gap:22px;flex-wrap:wrap;margin-top:35px;color:#e3f1fa;font-size:12px}.trust span:before{content:"✓";color:#9cdbff;font-weight:900;margin-right:7px}
+.search-panel{position:relative;margin-top:-43px;z-index:2}.searchbox{background:white;border-radius:15px;box-shadow:var(--shadow);padding:23px;display:grid;grid-template-columns:1.2fr 1fr 1fr auto;gap:14px;align-items:end}.field label{display:block;font-size:11px;font-weight:800;color:#4b6475;margin-bottom:7px}.field input,.field select{width:100%;border:1px solid var(--line);border-radius:8px;padding:13px;background:#fff;color:var(--ink);font-size:13px;min-width:0}
+section{padding:86px 0}.section-top{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:30px}.eyebrow{font-size:11px;color:var(--blue);letter-spacing:2px;text-transform:uppercase;font-weight:800}.section-top h2,.about h2,.custom h2{font:600 clamp(32px,4vw,48px)/1.13 "Playfair Display",serif;margin:9px 0 0}.section-top p{max-width:470px;color:var(--muted);font-size:13px;margin:0}.chips{display:flex;gap:9px;flex-wrap:wrap;margin:0 0 25px}.chip{border:1px solid var(--line);background:white;color:#476173;padding:9px 14px;border-radius:30px;font-size:12px;font-weight:700;cursor:pointer}.chip.active,.chip:hover{background:var(--blue);border-color:var(--blue);color:white}.packages{background:#f6faff}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.card{background:white;border:1px solid var(--line);border-radius:13px;overflow:hidden;box-shadow:0 5px 20px #143d5710;transition:.25s}.card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}.photo{height:220px;position:relative;overflow:hidden;background:#dcecf7}.photo img{width:100%;height:100%;object-fit:cover;transition:transform .5s}.card:hover .photo img{transform:scale(1.04)}.photo .pill{position:absolute;left:15px;top:15px;background:#ffffffed;color:var(--navy);border-radius:30px;padding:6px 10px;font-size:10px;font-weight:800}.card-body{padding:20px}.card-body h3{font:600 23px "Playfair Display",serif;margin:0;color:var(--navy)}.card-body p{color:var(--muted);font-size:12px;min-height:40px;margin:8px 0 17px}.card-bottom{border-top:1px solid var(--line);padding-top:14px;display:flex;justify-content:space-between;align-items:center;gap:8px}.price small{display:block;color:var(--muted);font-size:10px}.price strong{font-size:18px;color:var(--blue)}.card-bottom .btn{padding:10px 13px;font-size:11px}.custom-card{background:linear-gradient(140deg,#073b64,#0877c4);color:white;display:flex;flex-direction:column;justify-content:space-between;min-height:100%}.custom-card .photo{height:220px;background:linear-gradient(135deg,#0a5184,#48a8df);display:grid;place-items:center;color:#dff2ff}.custom-card .photo .spark{font-size:66px;opacity:.9}.custom-card .card-body h3{color:white}.custom-card .card-body p{color:#dceefa}.custom-card .card-bottom{border-color:#ffffff50}.custom-card .price small{color:#d6eafa}.custom-card .price strong{color:white}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}.about-photo{position:relative}.about-photo img{width:100%;height:440px;object-fit:cover;border-radius:15px}.float-note{position:absolute;right:-18px;bottom:25px;background:white;border-radius:12px;padding:17px 21px;box-shadow:var(--shadow);max-width:210px}.float-note strong{display:block;color:var(--blue);font:600 22px "Playfair Display",serif}.float-note small{font-size:11px;color:var(--muted)}.about p{color:var(--muted);font-size:14px;margin:16px 0}.features{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin-top:25px}.feature{background:var(--sky);padding:15px;border-radius:10px}.feature b{display:block;color:var(--navy);font-size:12px}.feature small{font-size:10px;color:var(--muted)}
+.custom{background:linear-gradient(120deg,#eaf5fc,#f7fbff)}.custom-layout{display:grid;grid-template-columns:.9fr 1.1fr;gap:45px;align-items:start}.custom-copy p{color:var(--muted);font-size:14px}.custom-copy ul{padding-left:19px;color:#526b7a;font-size:13px}.form{background:white;border:1px solid var(--line);border-radius:15px;padding:25px;box-shadow:var(--shadow)}.form h3{font:600 25px "Playfair Display",serif;margin:0 0 5px}.form>p{font-size:12px;color:var(--muted);margin:0 0 17px}.formgrid{display:grid;grid-template-columns:1fr 1fr;gap:13px}.form .field{margin-bottom:12px}.form .field input,.form .field select,.form .field textarea{width:100%;padding:12px;border:1px solid var(--line);border-radius:8px;font-size:12px;background:white}.form textarea{min-height:75px;resize:vertical}.checks{display:grid;grid-template-columns:1fr 1fr;gap:8px 12px;margin:8px 0 16px}.checks label{font-size:12px;color:#526b7a}.checks input{accent-color:var(--blue);margin-right:6px}.form button{width:100%}.form-note{font-size:10px!important;color:#788b98!important;margin-top:10px!important}
+.banner{padding:65px 0;background:linear-gradient(90deg,#06375de8,#086cb7b8),url('https://images.unsplash.com/photo-1473116763249-2faaef81ccda?auto=format&fit=crop&w=1800&q=85') center/cover;color:white;text-align:center}.banner h2{font:600 clamp(30px,4vw,45px) "Playfair Display",serif;margin:0}.banner p{color:#e5f3fb;font-size:13px;margin:12px auto 22px;max-width:550px}
+footer{background:#062f50;color:white;padding:48px 0 20px}.foot{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:35px;padding-bottom:30px}.foot p,.foot a{font-size:12px;color:#d8e9f4}.foot p{max-width:350px}.foot h4{margin:0 0 12px;font-size:13px}.foot a{display:block;margin:7px 0}.foot a:hover{text-decoration:underline}.copyright{border-top:1px solid #ffffff35;padding-top:17px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:10px;color:#d8e9f4}.wa{position:fixed;right:20px;bottom:20px;z-index:30;width:55px;height:55px;border-radius:50%;display:grid;place-items:center;background:#16834a;color:white;font-weight:900;box-shadow:0 8px 24px #0003;border:3px solid white}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}.searchbox{grid-template-columns:repeat(2,1fr)}.about{gap:35px}.custom-layout{gap:25px}}
+@media(max-width:680px){.wrap{width:calc(100% - 30px)}.topline .wrap{justify-content:center}.nav{height:72px}.brand img{width:48px;height:48px}.brand b{font-size:16px}.brand small{font-size:9px}.menu{display:block}.links{display:none;position:absolute;top:72px;left:0;right:0;background:white;padding:16px 22px;box-shadow:0 12px 20px #0001;flex-direction:column;align-items:stretch;gap:0}.links.open{display:flex}.links a{padding:12px 0;border-bottom:1px solid var(--line)}.links .btn{margin-top:12px}.hero{min-height:570px}.hero-inner{padding:75px 0}.hero p{font-size:14px}.search-panel{margin-top:-28px}.searchbox{grid-template-columns:1fr;padding:17px}.section-top{display:block}.section-top p{margin-top:12px}.grid{grid-template-columns:1fr}.photo{height:230px}section{padding:65px 0}.about,.custom-layout{grid-template-columns:1fr}.about-photo{order:2}.about-photo img{height:310px}.float-note{right:8px}.features{grid-template-columns:1fr 1fr}.formgrid{grid-template-columns:1fr}.foot{grid-template-columns:1fr 1fr}.foot>div:first-child{grid-column:1/-1}}
+@media(max-width:390px){.foot{grid-template-columns:1fr}.foot>div:first-child{grid-column:auto}.actions .btn{width:100%}}
 </style>
 </head>
-
 <body>
-<header>
-  <div class="container nav">
-    <a class="brand" href="#home" aria-label="Paavan Yatra home">
-      <!-- Keep your company logo in the repository root named logo.png (1).png -->
-      <img src="logo.png (1).png" alt="Paavan Yatra Tours and Travels logo">
-      <span>
-        <span class="brand-title">Paavan Yatra Tours &amp; Travels</span>
-        <span class="brand-tagline">Your journey, our responsibility.</span>
-      </span>
-    </a>
-
-    <button class="menu-toggle" id="menuToggle" aria-label="Open menu"
-      aria-expanded="false" aria-controls="navLinks" type="button">☰</button>
-
-    <!-- Only the essential links stay in the main menu -->
-    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
-      <a href="#packages">Packages</a>
-      <a href="#about">About Us</a>
-      <a href="#contact">Contact</a>
-      <a href="#contact" class="btn primary">Enquire Now ↗</a>
-    </nav>
-  </div>
-</header>
-
+<div class="topline"><div class="wrap"><span>🌴 Explore the Konkan with Paavan Yatra</span><span>WhatsApp: +91 93248 29663</span></div></div>
+<header><div class="wrap nav">
+<a class="brand" href="#home"><img src="logo.png%20(1).png" alt="Paavan Yatra logo"><span><b>Paavan Yatra</b><small>Tours &amp; Travels · Your journey, our responsibility.</small></span></a>
+<button class="menu" id="menu" aria-label="Open navigation">☰</button>
+<nav class="links" id="links"><a href="#packages">Packages</a><a href="#about">About Us</a><a href="#custom">Customize Trip</a><a href="#contact">Contact</a><a class="btn" href="#packages">Explore Packages ↗</a></nav>
+</div></header>
 <main>
-<section class="hero" id="home">
-  <div class="container hero-content">
-    <span class="eyebrow">Paavan Yatra Tours &amp; Travels</span>
-    <h1>Discover Konkan.<br><em>Feel the Journey.</em></h1>
-    <p>From Ganpatipule's sacred coastline to the beauty of Jaigad and Guhagar, plan a memorable Konkan getaway with Paavan Yatra.</p>
-    <div class="hero-actions">
-      <a class="btn white-btn" href="#packages">Explore Packages ↗</a>
-      <a class="btn" href="#contact" style="border-color:white;color:white">Enquire Now</a>
-    </div>
-    <div class="hero-note">Your journey, our responsibility.</div>
-  </div>
-</section>
-
-<div class="destination-bar">
-  <div class="container destination-links">
-    <a href="#ganpatipule-ratnagiri">Ganpatipule – Ratnagiri</a>
-    <a href="#ganpatipule-jaigad">Ganpatipule – Jaigad</a>
-    <a href="#ganpatipule-guhagar">Ganpatipule – Guhagar</a>
-    <a href="#konkan-darshan">Konkan Darshan</a>
-  </div>
-</div>
-
-<section id="about">
-  <div class="container about-grid">
-    <div class="reveal">
-      <span class="eyebrow">About Paavan Yatra</span>
-      <h2>Your next journey begins here.</h2>
-      <p>Konkan is known for its beautiful coastline, peaceful temples, historic forts and charming villages. Every destination has a story worth discovering.</p>
-      <p>At Paavan Yatra Tours &amp; Travels, we help travellers explore Konkan through planned travel packages. Tell us your preferred dates, group size and destination so we can share the relevant itinerary and pricing.</p>
-      <p>We believe every traveller should understand their package details, inclusions, exclusions and upgrade options before confirming a booking.</p>
-      <a class="btn primary" href="#packages" style="margin-top:23px">View Our Packages</a>
-    </div>
-    <div class="about-image reveal">
-      <img src="middle.png" alt="Scenic Konkan coastline and travel destination" loading="lazy">
-      <div class="image-note">Your journey, our responsibility.</div>
-    </div>
-  </div>
-</section>
-
-<section class="packages-section" id="packages">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="eyebrow">Our travel packages</span>
-      <h2>Find your Konkan getaway.</h2>
-      <p class="intro">Choose your destination to view the itinerary and enquire directly with us on WhatsApp.</p>
-    </div>
-    <div class="package-grid" id="packageGrid"></div>
-
-    <div class="pricing-note reveal">
-      <strong>Package price and AC upgrade details</strong>
-      <ul>
-        <li>The ₹5,499 starting price applies to the base non-AC package and is subject to confirmation.</li>
-        <li>Base arrangements: non-AC bus travel, non-AC room and non-AC sightseeing vehicle.</li>
-        <li>AC upgrade: an additional ₹500 per person for each selected component — bus, room or sightseeing vehicle.</li>
-        <li>Selecting all three AC upgrades adds ₹1,500 per person to the base starting price, if each upgrade is available.</li>
-        <li>Confirm travel dates, group size, availability, final price, meals, sightseeing, taxes and booking conditions with us before payment.</li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section class="cta">
-  <div class="container reveal">
-    <span class="eyebrow" style="color:#d9edff">Let's plan your trip</span>
-    <h2>Your Konkan journey is just one message away.</h2>
-    <p>Tell us your destination, travel dates and number of travellers. We'll help you with package details and available options.</p>
-    <a class="btn white-btn" id="ctaWhatsApp" href="#contact">Enquire on WhatsApp ↗</a>
-  </div>
-</section>
-
-<section class="contact-section" id="contact">
-  <div class="container contact-grid">
-    <div class="contact-copy reveal">
-      <span class="eyebrow">Get in touch</span>
-      <h2>Let's plan your next journey.</h2>
-      <p>Fill in your requirements and continue directly to WhatsApp to discuss your package with Paavan Yatra Tours &amp; Travels.</p>
-      <div class="contact-info">
-        <div class="contact-item">
-          <div class="contact-icon">WA</div>
-          <div><strong>WhatsApp Enquiries</strong><a id="contactWhatsApp" href="#" target="_blank" rel="noopener">+91 93248 29663</a></div>
-        </div>
-        <div class="contact-item">
-          <div class="contact-icon">IG</div>
-          <div><strong>Instagram</strong><a id="contactInstagram" href="#" target="_blank" rel="noopener">Follow @paavan.yatra</a></div>
-        </div>
-        <div class="contact-item">
-          <div class="contact-icon">PY</div>
-          <div><strong>Paavan Yatra Tours &amp; Travels</strong><span>Your journey, our responsibility.</span></div>
-        </div>
-      </div>
-    </div>
-
-    <form class="form-card reveal" id="enquiryForm">
-      <h3>Send an enquiry.</h3>
-      <p>Complete these details to prepare your WhatsApp message.</p>
-      <div class="form-group">
-        <label for="guestName">Your name *</label>
-        <input id="guestName" required placeholder="Enter your name" autocomplete="name">
-      </div>
-      <div class="form-group">
-        <label for="guestPhone">Your contact number *</label>
-        <input id="guestPhone" type="tel" required placeholder="Enter your number" autocomplete="tel">
-      </div>
-      <div class="form-group">
-        <label for="guestDestination">Package *</label>
-        <select id="guestDestination" required style="width:100%;padding:12px;border:1px solid var(--border);border-radius:4px;background:white;font-size:13px">
-          <option value="">Choose a package</option>
-          <option>Ganpatipule – Ratnagiri</option>
-          <option>Ganpatipule – Jaigad</option>
-          <option>Ganpatipule – Guhagar</option>
-          <option>Konkan Darshan</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="guestDates">Preferred travel dates</label>
-        <input id="guestDates" placeholder="e.g. 15–16 December">
-      </div>
-      <div class="form-group">
-        <label for="guestMessage">Additional requirements</label>
-        <textarea id="guestMessage" placeholder="Number of travellers, AC upgrade preference, etc."></textarea>
-      </div>
-      <button class="btn primary" type="submit">Send Enquiry on WhatsApp ↗</button>
-      <p class="form-note">Your details are not stored on this website. The message opens in WhatsApp for you to send.</p>
-    </form>
-  </div>
-</section>
+<section class="hero" id="home"><div class="wrap hero-inner">
+<span class="tag">✦ Konkan travel experiences</span>
+<h1>Find your escape.<br><em>Discover Konkan.</em></h1>
+<p>Golden beaches, coastal roads, historic forts and peaceful temples. Explore the Konkan your way with thoughtfully planned journeys by Paavan Yatra.</p>
+<div class="actions"><a class="btn light" href="#packages">Explore Packages ↗</a><a class="btn outline" href="#custom">Build Your Own Trip</a></div>
+<div class="trust"><span>Handpicked destinations</span><span>Personalised trip planning</span><span>Direct WhatsApp support</span></div>
+</div></section>
+<div class="search-panel"><div class="wrap"><div class="searchbox">
+<div class="field"><label for="destSearch">WHERE TO?</label><select id="destSearch"><option value="all">All Konkan destinations</option><option>Ganpatipule</option><option>Ratnagiri</option><option>Jaigad</option><option>Guhagar</option><option>Dapoli</option><option>Malvan</option><option>Tarkarli</option><option>Diveagar</option><option>Shrivardhan</option></select></div>
+<div class="field"><label for="tripType">TRIP STYLE</label><select id="tripType"><option value="all">All experiences</option><option value="beach">Beach escapes</option><option value="culture">Temples &amp; heritage</option><option value="coast">Coastal exploration</option></select></div>
+<div class="field"><label for="tripDate">TRAVEL DATE</label><input id="tripDate" type="date"></div>
+<button class="btn" id="searchBtn">Find a Trip ↗</button>
+</div></div></div>
+<section class="packages" id="packages"><div class="wrap">
+<div class="section-top"><div><span class="eyebrow">Explore our journeys</span><h2>Choose your Konkan getaway.</h2></div><p>Explore our planned packages or create a trip around the places you want to visit. Final prices and availability are confirmed for your dates.</p></div>
+<div class="chips" id="filters"><button class="chip active" data-filter="all">All packages</button><button class="chip" data-filter="beach">Beach escapes</button><button class="chip" data-filter="culture">Temples &amp; heritage</button><button class="chip" data-filter="coast">Coastal journeys</button></div>
+<div class="grid" id="packageGrid"></div>
+</div></section>
+<section><div class="wrap about" id="about">
+<div class="about-photo"><img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1200&q=85" alt="Konkan-style tropical coastline"><div class="float-note"><strong>Konkan calling</strong><small>Slow down, breathe in the sea and make memories.</small></div></div>
+<div><span class="eyebrow">A little about us</span><h2>Your journey deserves thoughtful planning.</h2>
+<p>Konkan is more than a destination. It is a feeling — the sound of the sea, the taste of local food, the beauty of winding coastal roads and the warmth of its people.</p>
+<p>Paavan Yatra Tours &amp; Travels helps you explore this beautiful region with planned travel packages and trip options shaped around your preferences.</p>
+<div class="features"><div class="feature"><b>Local experiences</b><small>Explore places worth the journey</small></div><div class="feature"><b>Clear planning</b><small>Know your itinerary and inclusions</small></div><div class="feature"><b>Personal support</b><small>Talk directly with our team</small></div></div>
+</div></div></section>
+<section class="custom" id="custom"><div class="wrap custom-layout">
+<div class="custom-copy"><span class="eyebrow">Your trip, your choices</span><h2>Customize your trip.</h2><p>Have a different plan in mind? Pick the places you want to explore and tell us what kind of trip you prefer. Our team will review your choices and share a suitable itinerary and quotation.</p>
+<ul><li>Choose multiple destinations and sightseeing places.</li><li>Tell us your hotel, transport and meal preferences.</li><li>Share dates, group size and starting city.</li><li>Get a personalised response directly on WhatsApp.</li></ul>
+<p><strong>Note:</strong> This form creates an enquiry, not an instant price quote. Final pricing depends on dates, group size, route, hotel and transport availability.</p></div>
+<form class="form" id="customForm"><h3>Plan your Konkan getaway</h3><p>Share a few details to start planning.</p>
+<div class="formgrid"><div class="field"><label>Your name *</label><input name="name" required placeholder="Full name"></div><div class="field"><label>Contact number *</label><input name="phone" required type="tel" placeholder="Mobile number"></div></div>
+<div class="formgrid"><div class="field"><label>Starting city</label><input name="city" placeholder="e.g. Mumbai / Pune"></div><div class="field"><label>Travel date</label><input name="date" type="date"></div></div>
+<div class="formgrid"><div class="field"><label>Adults</label><input name="adults" type="number" min="1" value="2"></div><div class="field"><label>Children (with ages)</label><input name="children" placeholder="e.g. 1 child, 8 years"></div></div>
+<div class="field"><label>Choose destinations (you can select more than one)</label><div class="checks">
+<label><input type="checkbox" name="places" value="Ganpatipule">Ganpatipule</label><label><input type="checkbox" name="places" value="Ratnagiri">Ratnagiri</label><label><input type="checkbox" name="places" value="Jaigad">Jaigad</label><label><input type="checkbox" name="places" value="Guhagar">Guhagar</label><label><input type="checkbox" name="places" value="Dapoli">Dapoli</label><label><input type="checkbox" name="places" value="Malvan">Malvan</label><label><input type="checkbox" name="places" value="Tarkarli">Tarkarli</label><label><input type="checkbox" name="places" value="Devgad">Devgad</label><label><input type="checkbox" name="places" value="Diveagar">Diveagar</label><label><input type="checkbox" name="places" value="Shrivardhan">Shrivardhan</label></div></div>
+<div class="field"><label>Sightseeing preferences</label><div class="checks"><label><input type="checkbox" name="sight" value="Beaches">Beaches</label><label><input type="checkbox" name="sight" value="Temples">Temples</label><label><input type="checkbox" name="sight" value="Forts & heritage">Forts &amp; heritage</label><label><input type="checkbox" name="sight" value="Water activities">Water activities</label><label><input type="checkbox" name="sight" value="Nature & viewpoints">Nature &amp; viewpoints</label><label><input type="checkbox" name="sight" value="Local food & culture">Local food &amp; culture</label></div></div>
+<div class="formgrid"><div class="field"><label>Hotel preference</label><select name="hotel"><option>Need hotel</option><option>Budget</option><option>Standard</option><option>Premium</option><option>Already arranged</option></select></div><div class="field"><label>Transport preference</label><select name="transport"><option>Suggest for us</option><option>AC bus</option><option>Non-AC bus</option><option>Private car</option><option>Own vehicle</option></select></div></div>
+<div class="formgrid"><div class="field"><label>Meals</label><select name="meals"><option>As per package</option><option>Breakfast</option><option>Breakfast &amp; meals</option><option>No meals required</option></select></div><div class="field"><label>Approx. budget per person</label><input name="budget" placeholder="e.g. ₹5,000–₹8,000"></div></div>
+<div class="field"><label>Other requirements / sightseeing places</label><textarea name="notes" placeholder="Mention preferred places, trip duration or anything else..."></textarea></div>
+<button class="btn" type="submit">Send my trip plan on WhatsApp ↗</button><p class="form-note">Your selections will be added to a WhatsApp message. Nothing is submitted until you send it in WhatsApp.</p>
+</form></div></section>
+<section class="banner"><div class="wrap"><h2>Ready to make memories in Konkan?</h2><p>Tell us where you want to go. We'll help you plan the journey.</p><a class="btn light" href="#custom">Start planning ↗</a></div></section>
+<section id="contact"><div class="wrap section-top"><div><span class="eyebrow">Talk to our team</span><h2>Let's plan your next journey.</h2></div><p>For package details, availability and bookings, connect with Paavan Yatra directly.</p></div><div class="wrap" style="display:flex;gap:12px;flex-wrap:wrap"><a class="btn" href="https://wa.me/919324829663" target="_blank" rel="noopener">WhatsApp +91 93248 29663 ↗</a><a class="btn" style="background:#073b64" href="https://www.instagram.com/paavan.yatra/" target="_blank" rel="noopener">Instagram @paavan.yatra ↗</a></div></section>
 </main>
-
-<footer>
-  <div class="container">
-    <div class="footer-top">
-      <div class="footer-brand">
-        <a class="brand" href="#home">
-          <img src="logo.png (1).png" alt="Paavan Yatra logo">
-          <span>
-            <span class="brand-title">Paavan Yatra Tours &amp; Travels</span>
-            <span class="brand-tagline">Your journey, our responsibility.</span>
-          </span>
-        </a>
-        <p>Discover Konkan with Paavan Yatra. Contact us to discuss your travel plans, itinerary and package options.</p>
-      </div>
-
-      <!-- Additional sections are kept in the footer instead of crowding the header -->
-      <div class="footer-links">
-        <h3>Explore</h3>
-        <a href="#home">Home</a>
-        <a href="#packages">All Packages</a>
-        <a href="#about">About Us</a>
-        <a href="#contact">Contact Us</a>
-      </div>
-
-      <div class="footer-links">
-        <h3>Helpful Information</h3>
-        <a href="#why-us">Why Choose Us</a>
-        <a href="#faq">Frequently Asked Questions</a>
-        <a id="footerWhatsApp" href="#" target="_blank" rel="noopener">WhatsApp Enquiry</a>
-        <a id="footerInstagram" href="#" target="_blank" rel="noopener">Instagram</a>
-        <a id="footerFacebook" href="#" target="_blank" rel="noopener">Facebook</a>
-      </div>
-    </div>
-
-    <div id="why-us" style="border-top:1px solid #ffffff40;padding:22px 0">
-      <h3 style="font-size:20px">Why choose Paavan Yatra?</h3>
-      <p style="font-size:12px;color:#e1edf7;margin-top:8px;max-width:700px">
-        Explore destination options, ask for clear package details and confirm your itinerary, inclusions, exclusions and upgrade charges before booking.
-      </p>
-    </div>
-
-    <div id="faq" style="border-top:1px solid #ffffff40;padding:22px 0">
-      <h3 style="font-size:20px;margin-bottom:12px">Frequently Asked Questions</h3>
-      <details style="border-color:#ffffff40">
-        <summary style="color:white">What is included in the ₹5,499 starting price?</summary>
-        <div class="details-content" style="color:#e1edf7">
-          The base package uses non-AC bus travel, a non-AC room and a non-AC sightseeing vehicle. Confirm the final itinerary and inclusions with us before booking.
-        </div>
-      </details>
-      <details style="border-color:#ffffff40">
-        <summary style="color:white">How much do AC upgrades cost?</summary>
-        <div class="details-content" style="color:#e1edf7">
-          The additional charge is ₹500 per person for each selected upgrade: bus, room or sightseeing vehicle, subject to availability and confirmation.
-        </div>
-      </details>
-      <details style="border-color:#ffffff40">
-        <summary style="color:white">Is the displayed price guaranteed for all dates?</summary>
-        <div class="details-content" style="color:#e1edf7">
-          No. Starting prices are subject to dates, group size, availability and the final confirmed quotation.
-        </div>
-      </details>
-      <details style="border-color:#ffffff40">
-        <summary style="color:white">How do I book a package?</summary>
-        <div class="details-content" style="color:#e1edf7">
-          Send an enquiry on WhatsApp. Confirm availability, itinerary, payment terms and cancellation conditions before making a booking payment.
-        </div>
-      </details>
-    </div>
-
-    <div class="footer-bottom">
-      <span>© <span id="year"></span> Paavan Yatra Tours &amp; Travels</span>
-      <span>Your journey, our responsibility.</span>
-    </div>
-  </div>
-</footer>
-
-<a class="floating-wa" id="floatingWhatsApp" href="#" target="_blank" rel="noopener" aria-label="WhatsApp Paavan Yatra">WA</a>
-
+<footer><div class="wrap"><div class="foot"><div><a class="brand" href="#home"><img src="logo.png%20(1).png" alt=""><span><b style="color:white">Paavan Yatra</b><small style="color:#d8e9f4">Tours &amp; Travels</small></span></a><p>Discover the Konkan coast with thoughtfully planned journeys. Your journey, our responsibility.</p></div><div><h4>Explore</h4><a href="#packages">Our Packages</a><a href="#about">About Us</a><a href="#custom">Customize Your Trip</a></div><div><h4>Connect</h4><a href="https://wa.me/919324829663">WhatsApp: +91 93248 29663</a><a href="https://www.instagram.com/paavan.yatra/">Instagram: @paavan.yatra</a><a href="#contact">Contact Us</a></div></div><div class="copyright"><span>© <span id="year"></span> Paavan Yatra Tours &amp; Travels</span><span>Your journey, our responsibility.</span></div></div></footer>
+<a class="wa" href="https://wa.me/919324829663" target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
 <script>
-/* ================= BUSINESS SETTINGS =================
-   WhatsApp number: the number supplied by the owner.
-   Add the correct Instagram profile URL below.
-   ===================================================== */
-const CONFIG = {
-  whatsapp: "919324829663",
-  instagram: "https://www.instagram.com/paavan.yatra/",
-  facebook: "https://www.facebook.com/share/1FVQv43M3u/?mibextid=wwXIfr",
-  brand: "Paavan Yatra Tours & Travels"
-};
-
-/* ================= EDIT PACKAGE DETAILS HERE =================
-   Change duration, price, dates, itinerary and inclusions below.
-   The starting price is not a guarantee of availability.
-   Confirm all details before publishing changes.
-   ============================================================= */
-const PACKAGES = [
-  {
-    id:"ganpatipule-ratnagiri",
-    name:"Ganpatipule – Ratnagiri",
-    duration:"2 Days / 1 Night",
-    price:"Starting from ₹5,499",
-    image:"ganpatipule.png",
-    description:"Visit Ganpati Bappa's temple, enjoy the coast and explore Ratnagiri's heritage attractions.",
-    itinerary:[
-      "Day 1: Arrive in Ganpatipule, check in to the hotel and freshen up.",
-      "Breakfast, followed by Ganpatipule Ganpati Temple darshan.",
-      "Visit Ganpatipule Beach and enjoy the coastal surroundings.",
-      "Lunch break.",
-      "Visit Prachin Konkan Museum and Magic Garden, subject to opening hours.",
-      "Enjoy the evening at Ganpatipule Beach and stay overnight.",
-      "Day 2: Breakfast and hotel check-out.",
-      "Ratnagiri sightseeing options: Aare-Ware Sea View, Ratnadurg Fort, Bhagwati Temple, Ratnagiri Fish Aquarium, Pawas Swami Swarupanand Math, Lokmanya Tilak Birthplace, Patit Pawan Temple, Mandvi Beach, Thiba Palace and Thiba Point & Shiv Srushti.",
-      "The final sightseeing route and return timing depend on the confirmed itinerary."
-    ],
-    inclusions:[
-      "Base package: non-AC bus travel, non-AC room and non-AC sightseeing vehicle.",
-      "Confirm transport, accommodation, sightseeing and other inclusions in the final quotation."
-    ],
-    exclusions:[
-      "Meals unless specifically listed in the confirmed quotation.",
-      "Entry tickets, personal expenses and additional activities unless specified.",
-      "Services not listed in the final confirmed package."
-    ]
-  },
-  {
-    id:"ganpatipule-jaigad",
-    name:"Ganpatipule – Jaigad",
-    duration:"2 Days / 1 Night",
-    price:"Starting from ₹5,499",
-    image:"jaigad.png",
-    description:"Combine Ganpatipule's temple and beach with the scenic Jaigad coast and heritage sites.",
-    itinerary:[
-      "Day 1: Arrive in Ganpatipule, check in to the hotel and freshen up.",
-      "Breakfast and Ganpatipule Ganpati Temple darshan.",
-      "Visit Ganpatipule Beach, followed by lunch.",
-      "Visit Prachin Konkan Museum and Magic Garden, subject to opening hours.",
-      "Enjoy the evening at Ganpatipule Beach and stay overnight.",
-      "Day 2: Breakfast and hotel check-out.",
-      "Jaigad sightseeing options: Jaigad Fort, Jay Vinayak Temple, Karateshwar Temple and Lighthouse, subject to access and opening hours.",
-      "Kavi Keshavsut Smarak at Malgund may be considered if the agreed route and available time allow.",
-      "Return and departure arrangements to be confirmed."
-    ],
-    inclusions:[
-      "Base package: non-AC bus travel, non-AC room and non-AC sightseeing vehicle.",
-      "Confirm the sightseeing route and final inclusions with Paavan Yatra."
-    ],
-    exclusions:[
-      "Meals unless specifically listed in the confirmed quotation.",
-      "Entry tickets, personal expenses and additional activities unless specified.",
-      "Services not listed in the final confirmed package."
-    ]
-  },
-  {
-    id:"ganpatipule-guhagar",
-    name:"Ganpatipule – Guhagar",
-    duration:"2 Days / 1 Night",
-    price:"Starting from ₹5,499",
-    image:"Guhagar.png",
-    description:"Enjoy Ganpatipule and explore Guhagar's beaches, temples and nearby coastal destinations.",
-    itinerary:[
-      "Day 1: Arrive in Ganpatipule, check in to the hotel and freshen up.",
-      "Breakfast and Ganpatipule Ganpati Temple darshan.",
-      "Visit Ganpatipule Beach, followed by lunch.",
-      "Visit Prachin Konkan Museum and Magic Garden, subject to opening hours.",
-      "Enjoy the evening at Ganpatipule Beach and stay overnight.",
-      "Day 2: Breakfast and hotel check-out.",
-      "Guhagar sightseeing options: Vyadeshwar Temple, Guhagar Beach and Dashbhuj Ganesh Temple.",
-      "Velneshwar Temple and Beach or Durgamata Temple may be considered depending on the confirmed route and available time.",
-      "Return and departure arrangements to be confirmed."
-    ],
-    inclusions:[
-      "Base package: non-AC bus travel, non-AC room and non-AC sightseeing vehicle.",
-      "Confirm the sightseeing route and final inclusions with Paavan Yatra."
-    ],
-    exclusions:[
-      "Meals unless specifically listed in the confirmed quotation.",
-      "Entry tickets, personal expenses and additional activities unless specified.",
-      "Services not listed in the final confirmed package."
-    ]
-  },
-  {
-    id:"konkan-darshan",
-    name:"Konkan Darshan",
-    duration:"Duration to be confirmed",
-    price:"Contact for Price",
-    image:"konkan.png",
-    description:"Ask us about a Konkan journey tailored to your preferred destinations and travel dates.",
-    itinerary:[
-      "The itinerary, duration and destinations will be shared after confirming your travel requirements.",
-      "Tell us your preferred destinations, dates and group size on WhatsApp.",
-      "Confirm the sightseeing route, transport, accommodation and final itinerary before booking."
-    ],
-    inclusions:[
-      "To be confirmed in the final written quotation."
-    ],
-    exclusions:[
-      "To be confirmed in the final written quotation."
-    ]
-  }
+const WA="919324829663";
+const packages=[
+{id:"ganpatipule-ratnagiri",name:"Ganpatipule – Ratnagiri",duration:"2 Days / 1 Night",price:"₹5,499*",kind:"culture",label:"Temple & coastal heritage",img:"https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=1000&q=85",desc:"Ganpati Bappa darshan, beautiful beaches and Ratnagiri's coastal heritage."},
+{id:"ganpatipule-jaigad",name:"Ganpatipule – Jaigad",duration:"2 Days / 1 Night",price:"₹5,499*",kind:"coast",label:"Fort & coastline",img:"https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1000&q=85",desc:"A coastal escape combining Ganpatipule, Jaigad Fort and scenic sea views."},
+{id:"ganpatipule-guhagar",name:"Ganpatipule – Guhagar",duration:"2 Days / 1 Night",price:"₹5,499*",kind:"beach",label:"Beach & temple trail",img:"https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1000&q=85",desc:"Relax by the shore and explore the peaceful temples around Guhagar."},
+{id:"dapoli",name:"Dapoli",duration:"Enquire for duration",price:"On enquiry",kind:"beach",label:"Beaches & nature",img:"https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1000&q=85",desc:"Discover quiet beaches, coastal viewpoints and the natural beauty of Dapoli."},
+{id:"malvan-tarkarli",name:"Malvan – Tarkarli",duration:"Enquire for duration",price:"On enquiry",kind:"beach",label:"Sea & water experiences",img:"https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=1000&q=85",desc:"Clear waters, coastal culture and memorable seaside experiences."},
+{id:"diveagar-shrivardhan",name:"Diveagar – Shrivardhan",duration:"Enquire for duration",price:"On enquiry",kind:"coast",label:"Peaceful coastal break",img:"https://images.unsplash.com/photo-1473116763249-2faaef81ccda?auto=format&fit=crop&w=1000&q=85",desc:"A relaxed coastal getaway with long beaches and Konkan village charm."}
 ];
-
-function esc(value){
-  return String(value ?? "").replace(/[&<>"']/g,function(c){
-    return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c];
-  });
-}
-
-function waUrl(message){
-  return "https://wa.me/" + CONFIG.whatsapp + "?text=" + encodeURIComponent(message);
-}
-
-function openWA(message){
-  window.open(waUrl(message),"_blank","noopener,noreferrer");
-}
-
-function listHTML(items){
-  return "<ul>" + items.map(function(item){
-    return "<li>" + esc(item) + "</li>";
-  }).join("") + "</ul>";
-}
-
-function packageMessage(pkg){
-  return [
-    "Hello " + CONFIG.brand + "!",
-    "",
-    "I am interested in the " + pkg.name + " package.",
-    "Duration: " + pkg.duration,
-    "Displayed price: " + pkg.price,
-    "",
-    "Itinerary:",
-    pkg.itinerary.map(function(x){return "- " + x;}).join("\n"),
-    "",
-    "Inclusions:",
-    pkg.inclusions.map(function(x){return "- " + x;}).join("\n"),
-    "",
-    "Exclusions:",
-    pkg.exclusions.map(function(x){return "- " + x;}).join("\n"),
-    "",
-    "Please confirm the final price, dates, availability, AC upgrade options and booking terms."
-  ].join("\n");
-}
-
-function renderPackages(){
-  const grid = document.getElementById("packageGrid");
-
-  grid.innerHTML = PACKAGES.map(function(pkg){
-    return `
-      <article class="package-card reveal" id="${esc(pkg.id)}">
-        <div class="package-photo">
-          <img src="${esc(pkg.image)}" alt="${esc(pkg.name)} destination" loading="lazy">
-        </div>
-        <div class="package-content">
-          <div class="package-duration">${esc(pkg.duration)}</div>
-          <h3>${esc(pkg.name)}</h3>
-          <p class="package-desc">${esc(pkg.description)}</p>
-
-          <div class="price-area">
-            <span class="price-caption">Package price</span>
-            <strong class="price">${esc(pkg.price)}</strong>
-            <span class="price-note">${pkg.price === "Contact for Price" ? "Enquire for your travel dates and group size." : "Starting price per person. Confirm availability."}</span>
-          </div>
-
-          <div class="package-buttons">
-            <button type="button" class="btn primary enquire" data-id="${esc(pkg.id)}">Enquire on WhatsApp ↗</button>
-          </div>
-
-          <details>
-            <summary>View itinerary and package details</summary>
-            <div class="details-content">
-              <h4>Itinerary</h4>
-              ${listHTML(pkg.itinerary)}
-              <h4>Inclusions</h4>
-              ${listHTML(pkg.inclusions)}
-              <h4>Exclusions</h4>
-              ${listHTML(pkg.exclusions)}
-            </div>
-          </details>
-        </div>
-      </article>`;
-  }).join("");
-
-  grid.querySelectorAll(".enquire").forEach(function(button){
-    button.addEventListener("click",function(){
-      const pkg = PACKAGES.find(function(p){return p.id === button.dataset.id;});
-      if(pkg) openWA(packageMessage(pkg));
-    });
-  });
-
-  setupReveal();
-}
-
-/* Direct WhatsApp links */
-function setupLinks(){
-  const genericMessage = "Hello Paavan Yatra Tours & Travels! I would like to enquire about your Konkan travel packages.";
-
-  ["contactWhatsApp","footerWhatsApp","floatingWhatsApp","ctaWhatsApp"].forEach(function(id){
-    const el = document.getElementById(id);
-    el.href = waUrl(genericMessage);
-    el.target = "_blank";
-    el.rel = "noopener noreferrer";
-  });
-
-  const facebookLink = document.getElementById("footerFacebook");
-  if(facebookLink){
-    facebookLink.href = CONFIG.facebook;
-    facebookLink.target = "_blank";
-    facebookLink.rel = "noopener noreferrer";
-  }
-
-  const instagramReady = true;
-  ["contactInstagram","footerInstagram"].forEach(function(id){
-    const el = document.getElementById(id);
-    if(instagramReady){
-      el.href = CONFIG.instagram;
-      el.target = "_blank";
-      el.rel = "noopener noreferrer";
-    }else{
-      el.href = "#contact";
-      if(id === "contactInstagram") el.textContent = "Follow @paavan.yatra";
-    }
-  });
-}
-
-/* Contact form: prepares a WhatsApp message, no backend required */
-document.getElementById("enquiryForm").addEventListener("submit",function(event){
-  event.preventDefault();
-
-  const name = document.getElementById("guestName").value.trim();
-  const phone = document.getElementById("guestPhone").value.trim();
-  const destination = document.getElementById("guestDestination").value;
-  const dates = document.getElementById("guestDates").value.trim();
-  const extra = document.getElementById("guestMessage").value.trim();
-
-  if(!name || !phone || !destination){
-    alert("Please enter your name, contact number and package.");
-    return;
-  }
-
-  openWA([
-    "Hello Paavan Yatra Tours & Travels!",
-    "",
-    "I would like to enquire about a package.",
-    "Name: " + name,
-    "My contact number: " + phone,
-    "Package: " + destination,
-    "Preferred dates: " + (dates || "Not decided yet"),
-    "Requirements: " + (extra || "None"),
-    "",
-    "Please share the final price, itinerary, availability and AC upgrade options."
-  ].join("\n"));
-});
-
-/* Mobile menu */
-const toggle = document.getElementById("menuToggle");
-const nav = document.getElementById("navLinks");
-
-function closeMenu(){
-  nav.classList.remove("open");
-  toggle.setAttribute("aria-expanded","false");
-  toggle.setAttribute("aria-label","Open menu");
-  toggle.textContent = "☰";
-}
-
-toggle.addEventListener("click",function(){
-  const open = nav.classList.toggle("open");
-  toggle.setAttribute("aria-expanded",String(open));
-  toggle.setAttribute("aria-label",open ? "Close menu" : "Open menu");
-  toggle.textContent = open ? "×" : "☰";
-});
-
-nav.querySelectorAll("a").forEach(function(link){
-  link.addEventListener("click",closeMenu);
-});
-
-window.addEventListener("resize",function(){
-  if(window.innerWidth > 700) closeMenu();
-});
-
-document.addEventListener("keydown",function(event){
-  if(event.key === "Escape") closeMenu();
-});
-
-/* Reveal sections as they enter the screen */
-let observer;
-function setupReveal(){
-  const items = document.querySelectorAll(".reveal:not(.visible)");
-  if(!("IntersectionObserver" in window)){
-    items.forEach(function(item){item.classList.add("visible");});
-    return;
-  }
-  if(!observer){
-    observer = new IntersectionObserver(function(entries){
-      entries.forEach(function(entry){
-        if(entry.isIntersecting){
-          entry.target.classList.add("visible");
-          observer.unobserve(entry.target);
-        }
-      });
-    },{threshold:0.06});
-  }
-  items.forEach(function(item){observer.observe(item);});
-}
-
-document.getElementById("year").textContent = new Date().getFullYear();
-renderPackages();
-setupLinks();
-setupReveal();
-</script>
-</body>
-</html>
+const grid=document.getElementById("packageGrid");
+function render(filter="all",query="all"){let list=packages.filter(p=>(filter==="all"||p.kind===filter)&&(query==="all"||p.name.toLowerCase().includes(query.toLowerCase())||p.id.includes(query.toLowerCase())));grid.innerHTML=list.map(p=>'<article class="card"><div class="photo"><img src="'+p.img+'" alt="'+p.name+' destination photo" loading="lazy"><span class="pill">'+p.label+'</span></div><div class="card-body"><small style="font-size:10px;color:#6b7e8b;font-weight:800">'+p.duration+'</small><h3>'+p.name+'</h3><p>'+p.desc+'</p><div class="card-bottom"><div class="price"><small>Package price</small><strong>'+p.price+'</strong></div><a class="btn" href="https://wa.me/'+WA+'?text='+encodeURIComponent('Hello Paavan Yatra! I am interested in the '+p.name+' package. Please share the itinerary, final price and availability.')+'" target="_blank" rel="noopener">View package ↗</a></div></div></article>').join("")+'<article class="card custom-card"><div class="photo"><div class="spark">✦</div></div><div class="card-body"><span class="eyebrow" style="color:#bfe7ff">Made for you</span><h3>Customize Your Trip</h3><p>Choose your own destinations, sightseeing, stay and transport. We'll plan it around you.</p><div class="card-bottom"><div class="price"><small>Personalised itinerary</small><strong>Let's plan it</strong></div><a class="btn light" href="#custom">Build my trip ↗</a></div></div></article>';}
+render();
+document.querySelectorAll(".chip").forEach(b=>b.addEventListener("click",()=>{document.querySelectorAll(".chip").forEach(x=>x.classList.remove("active"));b.classList.add("active");render(b.dataset.filter,document.getElementById("destSearch").value)}));
+document.getElementById("searchBtn").addEventListener("click",()=>{render(document.querySelector(".chip.active").dataset.filter,document.getElementById("destSearch").value);document.getElementById("packages").scrollIntoView({behavior:"smooth"})});
+document.getElementById("tripType").addEventListener("change",e=>{let k=e.target.value;document.querySelectorAll(".chip").forEach(x=>x.classList.toggle("active",x.dataset.filter===k));render(k,document.getElementById("destSearch").value)});
+document.getElementById("destSearch").addEventListener("change",e=>render(document.querySelector(".chip.active").dataset.filter,e.target.value));
+document.getElementById("customForm").addEventListener("submit",e=>{e.preventDefault();const f=new FormData(e.currentTarget);const vals=k=>f.getAll(k).join(", ")||"Not selected";const msg=["Hello Paavan Yatra! I would like to customise my Konkan trip.","","Name: "+f.get("name"),"Contact: "+f.get("phone"),"Starting city: "+(f.get("city")||"Not specified"),"Travel date: "+(f.get("date")||"Flexible"),"Adults: "+f.get("adults"),"Children: "+(f.get("children")||"None"),"Destinations: "+vals("places"),"Sightseeing: "+vals("sight"),"Hotel: "+f.get("hotel"),"Transport: "+f.get("transport"),"Meals: "+f.get("meals"),"Budget per person: "+(f.get("budget")||"Open to suggestions"),"Other requirements: "+(f.get("notes")||"None"),"","Please suggest an itinerary and share a detailed quotation."].join("\n");window.open("https://wa.me/"+WA+"?text="+encodeURIComponent(msg),"_blank","noopener,noreferrer")});
+document.getElementById("menu").addEventListener("click",()=>document.getElementById("links").classList.toggle("open"));document.querySelectorAll(".links a").forEach(a=>a.addEventListener("click",()=>document.getElementById("links").classList.remove("open")));document.getElementById("year").textContent=new Date().getFullYear();
+</script></body></html>
